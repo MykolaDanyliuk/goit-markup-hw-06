@@ -1,4 +1,6 @@
-# goit-markup-hw-06
+#
+
+goit-markup-hw-06
 
 - Создай репозиторий `goit-markup-hw-06`.
 - Склонируй созданный репозиторий и скопируй в него файлы предыдущей работы.
@@ -66,7 +68,29 @@
 **`«C6»`** Для всех эффектов ховера и фокуса (цвет, фон, тень) сделаны переходы.
 Время - `250ms`, функция распределения времени - `cubic-bezier(0.4, 0, 0.2, 1)`.
 
+### План занятия Александра Репеты # html-css-22 (11-разметка-форм)
+
+- Верстаем произвольную форму с использованием стандартных элементов
+- Пройтись по атрибутам name, value, placeholder, autofocus, [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete), required, checked и т. д.
+- Рассмотреть тег button:submit и почему не input:button
+- Разобрать радио-кнопки и чекбоксы, важность name и value.
+- Подробнее объяснить проблему стилизации fieldset через flexbox и почему используем div[role="group"].
+
+### План занятия Александра Репеты # html-css-22 (12-декоративные-эффекты-форм)
+
+- Особенности использования плейсхолдера и метки
+- Декоративная метка и иконка, селекторы +, ~ и :focus-within. Плейсхолдер с
+  пустой строкой.
+- Кастомные чекбоксы и радиокнопки:
+  - Как вырезать иконку
+  - Как прятать чек: display vs appearance vs visually-hidden
+  - Оформление через border и background-origin
+- [Кастомные чеки от Макеева](https://youtu.be/E6kLaaQFctU)
+
 ### Дополнительыне материалы
 
 https://choices-js.github.io/Choices/
 www.eclipse.org/etrice
+
+[библиотека tooltip](https://atomiks.github.io/tippyjs/)
+[валидаторjs](https://www.npmjs.com/package/validator)
