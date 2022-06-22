@@ -94,3 +94,6 @@ www.eclipse.org/etrice
 
 [библиотека tooltip](https://atomiks.github.io/tippyjs/)
 [валидаторjs](https://www.npmjs.com/package/validator)
+
+[pattern форматировани омера телефона Украины](https://gist.github.com/basilalex/4ccc3fa4548118bc037cc8592f359f0b)
+[маска для телефона js](https://codepen.io/htmllabru/pen/BOdKMe)

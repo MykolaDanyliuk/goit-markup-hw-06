@@ -75,7 +75,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-btn pointer" data-modal-open>
+          <button type="button" class="btn hero-btn pointer" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -473,7 +473,7 @@
               id="mail"
               placeholder="E-mail"
             />
-            <button type="submit" class="form-btn">
+            <button type="submit" class="btn form-btn">
               Подписаться
               <svg class="form-icon-send" width="20" height="20">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -491,9 +491,86 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Имя</label>
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              placeholder="Джон"
+              required
+              id="user-name"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              placeholder="+38 (050) 111-11-11"
+              required
+              minlength="10"
+              title="+38 (050) 111-11-11"
+              id="user-tel"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Почта</label>
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              placeholder="qwe123@gmail.com"
+              required
+              id="user-email"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="modal-text">Комментарий</label>
+            <textarea
+              name="modal-text"
+              id="modal-text"
+              class="modal-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn modal-btn">Отправить</button>
+        </form>
+        <!-- <label class="modal-label"
+            >Имя
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              placeholder="Джон"
+              required
+            />
+          </label> -->
+        <!-- <div class="modal-field">
+          <label class="modal-label" for="service">Послуга</label>
+          <select name="service" class="modal-input" id="service"></select>
+          <option value="haircut">Стрижка</option>
+          <option value="bearcut">Стрижка бороды</option>
+        </div>
+        <fieldset>
+          <legend>Size</legend>
+          <label for="big"></label>
+          <input type="radio" id="big" name="size" value="big" />
+          <label for="small"></label>
+          <input type="radio" id="small" name="size" value="small" />
+        </fieldset>
+        <fieldset>
+          <legend>add</legend>
+          <label for="cheese"></label>
+          <input type="checkbox" id="cheese" name="size" value="cheese" />
+          <label for="tomato"></label>
+          <input type="checkbox" id="tomato" name="size" value="tomato" />
+        </fieldset> -->
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>

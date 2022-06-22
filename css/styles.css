@@ -66,6 +66,22 @@ img {
   overflow: hidden;
 }
 
+.btn {
+  min-width: 200px;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -262,21 +278,8 @@ img {
 }
 
 .hero-btn {
-  display: inline-block;
-  min-width: 200px;
   padding: 10px 32px;
-  border: 0;
-  border-radius: 4px;
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,25 +703,10 @@ img {
 
 .form-btn {
   display: flex;
+  align-items: center;
   margin-left: 12px;
   padding-left: 29px;
-  min-width: 200px;
-  height: 50px;
-
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  /* cursor: pointer; */
 }
 
 .form-icon-send {
@@ -750,6 +738,7 @@ img {
   top: 50%;
   left: 50%;
   border-radius: 4px;
+  padding: 40px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -760,17 +749,18 @@ img {
 }
 
 .modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
+
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .is-hidden {
@@ -781,6 +771,91 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.modal-input {
+  margin-top: 4px;
+  margin-bottom: 28px;
+  padding-left: 12px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: purple;
+  background-color: transparent;
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(128, 173, 113, 0.352);
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(198, 124, 124, 0.352);
+}
+
+/* .modal-input:placeholder-shown {
+  background-color: transparent;
+} */
+
+.modal-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--title-text-color);
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  cursor: pointer;
+}
+
+.modal-label {
+  width: 25px;
+  height: 14px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--title-text-color);
+}
+
+.modal-text {
+  margin-top: 4px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  color: purple;
+}
+
+.modal-text::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 /* ------------ PORTFOLIO ------------ */
 
