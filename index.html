@@ -492,41 +492,56 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <div class="modal-field">
             <label class="modal-label" for="user-name">Имя</label>
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              placeholder="Джон"
-              required
-              id="user-name"
-            />
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder=" "
+                required
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black-18dp"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label class="modal-label" for="user-tel">Телефон</label>
-            <input
-              type="tel"
-              name="user-tel"
-              class="modal-input"
-              placeholder="+38 (050) 111-11-11"
-              required
-              minlength="10"
-              title="+38 (050) 111-11-11"
-              id="user-tel"
-            />
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder=" "
+                required
+                minlength="10"
+                title="+38 (050) 111-11-11"
+                id="user-tel"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label class="modal-label" for="user-email">Почта</label>
-            <input
-              type="email"
-              name="user-email"
-              class="modal-input"
-              placeholder="qwe123@gmail.com"
-              required
-              id="user-email"
-            />
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder=" "
+                required
+                id="user-email"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black-18dp"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label class="modal-label" for="modal-text">Комментарий</label>
@@ -537,38 +552,25 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="">Условия договора</a>
+            </label>
+          </div>
           <button type="submit" class="btn modal-btn">Отправить</button>
         </form>
-        <!-- <label class="modal-label"
-            >Имя
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              placeholder="Джон"
-              required
-            />
-          </label> -->
-        <!-- <div class="modal-field">
-          <label class="modal-label" for="service">Послуга</label>
-          <select name="service" class="modal-input" id="service"></select>
-          <option value="haircut">Стрижка</option>
-          <option value="bearcut">Стрижка бороды</option>
-        </div>
-        <fieldset>
-          <legend>Size</legend>
-          <label for="big"></label>
-          <input type="radio" id="big" name="size" value="big" />
-          <label for="small"></label>
-          <input type="radio" id="small" name="size" value="small" />
-        </fieldset>
-        <fieldset>
-          <legend>add</legend>
-          <label for="cheese"></label>
-          <input type="checkbox" id="cheese" name="size" value="cheese" />
-          <label for="tomato"></label>
-          <input type="checkbox" id="tomato" name="size" value="tomato" />
-        </fieldset> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
