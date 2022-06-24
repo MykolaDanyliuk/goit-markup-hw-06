@@ -771,6 +771,17 @@ img {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
+
+  cursor: pointer;
+}
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -784,7 +795,8 @@ img {
 } */
 
 .modal-title {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
