@@ -77,7 +77,7 @@
   - Оформление через border и background-origin
 - [Кастомные чеки от Макеева](https://youtu.be/E6kLaaQFctU)
 
-### Дополнительыне материалы
+### Дополнительные материалы
 
 https://choices-js.github.io/Choices/
 www.eclipse.org/etrice
