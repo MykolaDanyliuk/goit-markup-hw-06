@@ -89,3 +89,5 @@ www.eclipse.org/etrice
 [маска для телефона js](https://codepen.io/htmllabru/pen/BOdKMe)
 
 (https://www.dropzone.dev/js/)
+
+[ваша первая HTML-форма](https://developer.mozilla.org/ru/docs/Learn/Forms/Your_first_form)
